@@ -1,0 +1,91 @@
+/* Navbar.css */
+.navbar {
+  background-color: #013914;
+  color: white;
+  padding: 10px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.logo:hover {
+  color: #1dbf73;
+  /* Change color on hover */
+}
+
+.nav-link:hover {
+  color: #1dbf73;
+  /* Change color on hover */
+}
+
+.navbar-brand {
+  font-size: 12 px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #1dbf73;
+  /* Change color on hover */
+}
+.link:hover {
+  color: #1dbf73;
+  /* Change color on hover */
+}
+.options {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 999;
+  border: 1px solid lightgrey;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 200px;
+  font-weight: 300;
+  color: gray;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-weight: 500;
+  color: blue;
+}

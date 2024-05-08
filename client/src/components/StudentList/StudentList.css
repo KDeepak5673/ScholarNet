@@ -1,0 +1,57 @@
+/* StudentList.css */
+
+.student-list-container {
+  margin: 20px;
+  background-image: url('../../image/bg_blur.jpg');
+  background-position: center;
+  height: 90vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.student-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  width: 85%;
+
+
+}
+
+.student-list h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th,
+.student-list td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.student-list th {
+  background-color: #f2f2f2;
+}
+
+.student-list .line:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.student-list .line:hover {
+  background-color: #e0e0e0;
+}
+
+.student-list .student-name,
+.student-list .student-grade {
+  font-weight: bold;
+}
