@@ -7,7 +7,7 @@ import newRequest from '../../utils/newRequest';
 const StudentLogin = () => {
   const [username, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   const navigate = useNavigate(); // Use useNavigate hook to get access to the navigation function
 
   const handleSubmit = async (event) => {

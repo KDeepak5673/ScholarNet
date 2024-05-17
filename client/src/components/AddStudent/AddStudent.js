@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import newRequest from "../../utils/newRequest";
 import "./AddStudent.css";
-import { Navigate, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const AddStudent = () => {
   const [name, setName] = useState('');

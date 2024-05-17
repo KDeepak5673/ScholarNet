@@ -5,7 +5,7 @@ import newRequest from "../../utils/newRequest";
 import "./Navbar.css"
 
 function Navbar() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState();
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
   const navigate = useNavigate();
 

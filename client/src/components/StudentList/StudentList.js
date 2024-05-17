@@ -1,13 +1,11 @@
 // StudentList.js
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './StudentList.css';
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 
 const StudentList = () => {
-  const currentUser = JSON.parse(localStorage.getItem("currentUser"));
-
-  const [students, setStudents] = useState([]);
+  // const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const { isLoading, error, data } = useQuery({
     queryKey: ["student-list"],
