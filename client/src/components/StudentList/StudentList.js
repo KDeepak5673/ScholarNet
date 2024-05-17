@@ -20,7 +20,7 @@ const StudentList = () => {
   return (
     <div className='student-list-container'>
       {isLoading ? (
-        "loading"
+        "Loading..."
       ) : error ? (
         "error"
       ) : (

@@ -16,7 +16,7 @@ const AddStudent = () => {
     try {
       await newRequest.post("/students", { name, age, grade });
       navigate("/student-list");
-    //   alert('Student added successfully');
+      alert('Student added successfully');
       // You can also redirect to the student list page after adding the student
     } catch (error) {
       console.error('Error adding student:', error);
