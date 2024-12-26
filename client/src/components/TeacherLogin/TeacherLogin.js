@@ -6,7 +6,8 @@ import newRequest from '../../utils/newRequest';
 const TeacherLogin = () => {
   const [username, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [setError] = useState(null);
+  
+  const [error, setError] = useState(""); 
 
   const navigate = useNavigate(); 
 
@@ -17,7 +18,7 @@ const TeacherLogin = () => {
       localStorage.setItem("currentUser", JSON.stringify(res.data));
       navigate('/');
     } catch (err) {
-      setError(err.response.data);
+      setError(err.response?.data?.msg || "login Failed.");
     }
 
   };
@@ -46,6 +47,7 @@ const TeacherLogin = () => {
             />
           </div>
           <button type="submit">Login</button>
+          {error && <p style={{ color: "red" , marginLeft: "12px" }}>{error}</p>}
         </form>
       </div>
     </div>

@@ -37,6 +37,7 @@
   color: white;
   font-weight: bold;
   transition: color 0.3s;
+  
 }
 
 .logo:hover {
@@ -59,12 +60,12 @@
 
 .navbar-brand:hover {
   color: #1dbf73;
-  /* Change color on hover */
 }
+
 .link:hover {
-  color: #1dbf73;
-  /* Change color on hover */
+  color: rgb(115, 115, 222);
 }
+
 .options {
   position: absolute;
   top: 50px;
@@ -77,9 +78,10 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  width: 200px;
+  width: 150px;
   font-weight: 300;
   color: gray;
+  
 }
 
 .link {
@@ -87,5 +89,7 @@
   align-items: center;
   gap: 24px;
   font-weight: 500;
-  color: blue;
+  color: rgb(80, 34, 34);
+  text-decoration: none
 }
+

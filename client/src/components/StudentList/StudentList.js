@@ -30,13 +30,15 @@ const StudentList = () => {
             <thead>
               <tr>
                 <th>Name</th>
-                <th>Grade</th>
+                <th>Register Number</th>
+                <th>Percentage</th>
               </tr>
             </thead>
             <tbody>
               {data.map(student => (
                 <tr className="line" key={student.id}>
                   <td className="student-name">{student.name}</td>
+                  <td className="student-regNo">{student.regNo}</td>
                   <td className="student-grade">{student.grade}</td>
                 </tr>
               ))}

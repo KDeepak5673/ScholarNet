@@ -4,11 +4,19 @@
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    display: flex;
+    align-content: center;
+    
+  
   }
   
   .container {
-    max-width: 1200px;
+    
     margin: 0 auto;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
   }
   
   p {

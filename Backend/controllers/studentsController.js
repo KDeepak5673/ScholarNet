@@ -5,10 +5,10 @@ import Student from '../models/student.js';
 // Controller function to create a new student
 export const createStudent = async (req, res) => {
   try {
-    const { name, grade, age } = req.body;
+    const { name, grade, age , regNo } = req.body;
 
     // Create new student
-    const newStudent = new Student({ name, grade, age });
+    const newStudent = new Student({ name, grade, age , regNo });
 
     // Save student to database
     await newStudent.save();
@@ -49,7 +49,7 @@ export const getStudentById = async (req, res) => {
 export const updateStudent = async (req, res) => {
   try {
     const { name, grade, age } = req.body;
-    const updatedStudent = await Student.findByIdAndUpdate(req.params.id, { name, grade, age }, { new: true });
+    const updatedStudent = await Student.findByIdAndUpdate(req.params.id, { name, grade, age , regNo}, { new: true });
     if (!updatedStudent) {
       return res.status(404).json({ msg: 'Student not found' });
     }

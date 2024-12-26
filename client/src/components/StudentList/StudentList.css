@@ -52,6 +52,7 @@
 }
 
 .student-list .student-name,
-.student-list .student-grade {
+.student-list .student-grade , 
+.student-list .student-regNo{
   font-weight: bold;
 }

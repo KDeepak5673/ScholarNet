@@ -23,14 +23,17 @@ function Navbar() {
     <nav className="navbar">
       <div className="container">
         <div className="logo">
-          <Link className="logo" to="/">
-            <span className="text">ScholarNet</span>
-          </Link>
+          <div>
+            <Link className="logo" to="/">
+              <span className="text">ScholarNet</span>
+            </Link>
+          </div>
+          
         </div>
         <div className="navbar-nav">
           {currentUser ? (
             <div className="nav-link" onClick={() => setOpen(!open)}>
-              <Link className="nav-link">{currentUser?.username}</Link>
+              <Link className="nav-link" onClick={(e) => e.preventDefault()}>{currentUser?.username}</Link>
               {open && (
                 
                   <div className="options">
